@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<title>SFHS Chess Club</title>
+<link rel='stylesheet' href='../css/members.css'>
+<meta charset='utf-8'>
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet"> 
+<link rel='shortcut icon' href='../images/favicon.png' type='image/jpg' size='64x64'> 
+<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+<!--[if IE]>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+<![endif]-->
+<script>
+(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})()
+</script>
+</head>
+
+<body>
+
+  <img src='../images/logo.png' class='logo' />
+	<header>	
+	  <h1><a href='index.html' class='h1'>SFHS Chess Club</a></h1>
+      <!--Horizontal NavMenu-->	
+	  <nav>
+        <ul>
+          <li><a href='info.html'>Info</a></li>
+          <li><a href='members.html'>Members</a></li>
+          <li><a href='challenges.html'>Challenges</a></li>
+		  <li><a href='strategy.html'>Strategy</a></li>
+		  <li><a href='schedule.html'>Schedule</a></li>
+		  <li><a href='#openModal' class='login'>Log In</a></li>
+        </ul>
+       </nav>
+	   <!--End Horizontal NavMenu-->
+	</header>
+	
+	<div class='lisulink'>
+	  
+      <!--Sign in Modal Box-->
+	  <div id='openModal' class='modalDialog'>
+	     <div>
+		   <a href='#close' title='Close' class='close'>X</a>
+		   <h2 class='modal'>Log In</h2>
+		   <p class='modal'>Log in to review your challenges, ranking, and other great features!</p>
+		   <form>
+		     <input type='text' placeholder='Username' class='username' autofocus required><br>
+			 <input type='password' placeholder='Password'  class='username' required><br>
+			 <input type='submit' class='submit'>
+		   </form>
+		   <p class='signup'>Not a member yet? Sign up <a href='#openModalSignUp' class='modalLISU'>here.</a>
+         </div>		   
+       </div>
+	   
+	   <!--Sign Up Modal Box-->
+	   <div id='openModalSignUp' class='modalDialogSignUp'>
+	     <div>
+		   <a href='#close' title='Close' class='close'>X</a>
+		   <h2 class='modal'>Sign Up</h2>
+		   <p class='modal'>Sign up to become an official member of SFHS Chess Club!</p>
+		   <form>
+		     <input type='email' placeholder='Email' class='email' name='email' required><br>
+		     <input type='text' placeholder='Username' class='username' name='username' required><br>
+			 <input type='password' placeholder='Password'  class='username' required><br>
+			 <input type='submit' class='submit'>
+		   </form>
+		   <p class='signup'>Already a member? Sign in <a href='#openModal' class='modalLISU'>here.</a>
+		 </div>
+	   </div>
+	   
+	</div>
+	
+	<div class='wholething'>
+	
+	<!--Members List-->
+    <section class='membersmain'>
+	  <h2 class='main'>SFHS Chess Members:</h2>
+	  <div class='left'>
+	    <a href='#profileModal' class='profile'><p class='left'><img src='../images/profile_icon.png' height='30' width='30' class='profileicon'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Michael Cleversley</p></a><br>
+		<a href='#profileModal' class='profile'><p class='left'><img src='../images/profile_icon.png' height='30' width='30' class='profileicon'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Owen Roberts</p></a><br>
+		<a href='#profileModal' class='profile'><p class='left'><img src='../images/profile_icon.png' height='30' width='30' class='profileicon'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Douglas Coleman</p></a><br>
+		<a href='#profileModal' class='profile'><p class='left'><img src='../images/profile_icon.png' height='30' width='30' class='profileicon'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Joe Strozyk</p></a><br>
+		<a href='#profileModal' class='profile'><p class='left'><img src='../images/profile_icon.png' height='30' width='30' class='profileicon'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Tony Marzullo</p></a><br>
+      </div>
+      <div class='right'>
+		<a href='#frankModal' class='profile'><p class='right'><img src='../images/profile_icon.png' height='30' width='30' class='profileicon'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Frank Neff :(</p></a><br>
+		<a href='#profileModal' class='profile'><p class='right'><img src='../images/profile_icon.png' height='30' width='30' class='profileicon'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Connor Cavanaugh</p></a><br>
+		<a href='#profileModal' class='profile'><p class='right'><img src='../images/profile_icon.png' height='30' width='30' class='profileicon'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ben Miller</p></a><br>
+		<a href='#profileModal' class='profile'><p class='right'><img src='../images/profile_icon.png' height='30' width='30' class='profileicon'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Aiden Reichenberg</p></a><br>
+		<a href='#profileModal' class='profile'><p class='right'><img src='../images/profile_icon.png' height='30' width='30' class='profileicon'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Mpenzie</p></a><br>
+	  </div>
+	</section>
+	
+	<br>
+	<br>
+	
+
+	  <!--Rankings List-->
+	  <h2 class='rankingmain'>Club Rankings:</h2>
+	  <ol class='rankings'>
+	    <li class='list'>Jack Tao</li>
+		<li class='list'>Michael Cleversley</li>
+		<li class='list'>Owen Roberts</li>
+		<li class='list'>Douglas Coleman</li>
+		<li class='list'>Joe Strozyk</li>
+		<li class='list'>Tony Marzullo</li>
+		<li class='list'>Covor Babanaugh</li>
+      </ol>
+	  <br>
+	  <br>
+	  
+	</div>
+	
+	<!--Profile Modal Box-->
+	  <div id='profileModal' class='modalDialog'>
+	     <div>
+		   <a href='#close' title='Close' class='close'>X</a>
+		   <h2 class='modal'>[Member Name Here]</h2>
+		     <p class='profile'>Current Rank:</p>
+		     <p class='profile'>Challenge Matches Played:</p>
+		     <p class='profile'>Currently in a Challenge?</p>
+		     <a href='#openModalChallenge' class='chlng'>Challenge Member Here</a>
+         </div>		   
+       </div>
+	<!--Frank's Special Modal-->
+	   <div id='frankModal' class='modalDialog'>
+	     <div>
+		   <a href='#close' title='Close' class='close'>X</a>
+		   <h2 class='modal'>Franklin Liboreo Neff</h2>
+		     <p class='profile'>Current Rank: Infinity</p>
+		     <p class='profile'>Challenge Matches Played: All of them</p>
+		     <p class='profile'>Currently in a Challenge? Yes...</p>
+		     <a href='#openModalChallenge' class='chlng'>Don't Challenge Him</a>
+         </div>		   
+       </div>
+	
+	<!--Challenge Modal-->
+	<div id='openModalChallenge' class='modalChallenge'>
+	     <div>
+		   <a href='#close' title='Close' class='close'>X</a>
+		   <h2 class='modal'>Challenge Match Request:</h2>
+		   <hr>
+		   <form name='challenge' onsubmit='return validateForm()'>
+		     <input list='people' placeholder='Challenger' required name='fname'>
+               <datalist id='people'>
+                 <option value='Michael Cleversley'>
+                 <option value='Owen Roberts'>
+                 <option value='Jack Tao'>
+                 <option value='Doug Coleman'>
+                 <option value='Joe Strozyk'>
+			     <option value='Ben Miller'>
+		  	     <option value='Frank Neff'>
+			     <option value='Adam Higgins'>
+			     <option value='Connor Cavanaugh'>
+			     <option value='Max Strittmatter'>
+				 <option value='Tony Marzullo'>
+				 <option value='Mpenzie'>
+				 <option value='Aiden Reichenberg'>
+               </datalist> 
+		     <p>versus...</p>
+		     <input list='people' placeholder='Challengee' required name='fname'>
+               <datalist id='people'>
+                 <option value='Michael Cleversley'>
+                 <option value='Owen Roberts'>
+                 <option value='Jack Tao'>
+                 <option value='Doug Coleman'>
+                 <option value='Joe Strozyk'>
+			     <option value='Ben Miller'>
+			     <option value='Frank Neff'>
+			     <option value='Adam Higgins'>
+			     <option value='Connor Cavanaugh'>
+			     <option value='Max Strittmatter'>
+				 <option value='Tony Marzullo'>
+				 <option value='Mpenzie'>
+				 <option value='Aiden Reichenberg'>
+               </datalist>
+		     <br>
+		     <hr>
+		     <input type='date' placeholder='Today&#39;s Date' required name='fname'>
+		     <br>
+		     <input type='submit' class='submit'>
+		   </form>
+         </div>		   
+    </div>
+	
+	<!--Social Media Bar-->
+	<div class='social-btns'>
+	  <ul>
+	    <li><a class='btn facebook' href='http://www.facebook.com' target='blank'><i class='fa fa-facebook'></i></a></li>
+	    <li><a class='btn twitter' href='http://www.twitter.com' target='blank'><i class='fa fa-twitter'></i></a></li>
+	    <li><a class='btn google' href='http://www.google.com' target='blank'><i class='fa fa-google'></i></a></li>
+	    <li><a class='btn dribbble' href='http://www.dribbble.com' target='blank'><i class='fa fa-dribbble'></i></a></li>
+	    <li><a class='btn skype' href='http://www.skype.com' target='blank'><i class='fa fa-skype'></i></a></li>
+      </ul>
+    </div>
+
+</body>
+
+</html>
