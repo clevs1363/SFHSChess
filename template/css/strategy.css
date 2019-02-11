@@ -1,0 +1,648 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+body {
+  background-image: url('../../images/wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+img.logo {
+  position: fixed;
+  height: 160px;
+  width: 135px;
+  margin-left: -32px;
+  margin-top: -45px;
+}
+
+header { 
+  margin: 0; 
+  padding: 0;
+  overflow: auto;
+}
+
+h1 {
+  color: white;
+  font-size: 350%;
+  position: relative;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+
+.h1header {
+  text-align: center;
+}
+
+a.h1 {
+  display: inline-block;
+}
+
+a.h1:link {
+  color: white;
+  text-decoration: none;
+}
+  
+a.h1:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a.h1:hover{
+  color: #d4dde1;
+  text-decoration: none;
+}
+
+a.h1:active {
+  color: white;
+  text-decoration: none;
+}
+
+a.index:link {
+  color: #d4dde1;
+  text-decoration: none;
+}
+  
+a.index:visited {
+  color: #d4dde1;
+  text-decoration: none;
+}
+
+a.index:hover{
+  color: #d4dde1;
+  text-decoration: none;
+}
+
+a.index:active {
+  color: #d4dde1;
+}
+
+div.lisulink {
+
+}
+
+a.login {
+  color: #AA4B41;
+}
+
+/*
+Modal Login Box
+*/
+
+.modalDialog {
+  position: fixed;
+  font-family: 'Raleway', sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #d4dde1;
+  background: -moz-linear-gradient(#d4dde1, #335252);
+  background: -webkit-linear-gradient(#d4dde1, #335252); 
+  background: -o-linear-gradient(#d4dde1, #335252);
+}
+
+/*
+Modal Signup Box
+*/
+
+.modalDialogSignUp {
+  position: fixed;
+  font-family: 'Raleway', sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialogSignUp:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialogSignUp > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #d4dde1;
+  background: -moz-linear-gradient(#d4dde1, #335252);
+  background: -webkit-linear-gradient(#d4dde1, #335252); 
+  background: -o-linear-gradient(#d4dde1, #335252);
+}
+
+a.modalLISU:link {
+    color: #2d3033;
+}
+
+a.modalLISU:visited {
+    color: #2d3033;
+}
+
+a.modalLISU:hover {
+    color: #aa4b41;
+}
+
+a.modalLISU:active {
+    color: #d4dde1;
+}
+
+a.close {
+  text-decoration: none;
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+a.close:link {
+    color: #2d3033;
+}
+
+a.close:visited {
+    color: #2d3033;
+}
+
+a.close:hover {
+    color: #2d3033;
+}
+
+a.close:active {
+    color: #2d3033;
+}
+
+h2.modal {
+  text-align: center;
+  margin: 10px;
+}
+
+input {
+  margin: 5px;
+}
+
+p.signup {
+  text-align: center;
+  font-size: x-small;
+}
+
+/*
+Horizontal CSS Menu Starts Here
+*/
+
+nav {
+  position: relative;
+  width: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  margin: 0 auto;
+}
+
+nav ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+nav.align-right ul li {
+  float: right;
+}
+
+nav.align-center ul {
+  text-align: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+
+nav ul li a:hover {
+  color: #335252;
+}
+
+nav ul li a:hover:before {
+  width: 100%;
+}
+
+nav ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+
+nav ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+nav ul li.last > a:after,
+nav ul li:last-child > a:after {
+  display: none;
+}
+
+nav ul li.active a {
+  color: #333333;
+}
+
+nav ul li.active a:before {
+  width: 100%;
+}
+
+nav.align-right li.last > a:after,
+nav.align-right li:last-child > a:after {
+  display: block;
+}
+
+nav.align-right li:first-child a:after {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul li {
+    float: none;
+    display: block;
+  }
+
+  nav ul li a {
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    border-bottom: 1px solid #fb998c;
+  }
+
+  nav ul li.last > a,
+  nav ul li:last-child > a {
+    border: 0;
+  }
+
+  nav ul li a:after {
+    display: none;
+  }
+
+  nav ul li a:before {
+    display: none;
+  }
+}
+
+.mainWrapper {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;   
+}
+
+section.main {
+  margin: 0 auto;
+  width: 100%;
+  background-color: #d4dde1;
+  display: inline-block;
+  margin-bottom: 25px;
+  border-radius: 7px;
+}
+
+img.strategyStudy, img.strategyRead, img.strategyWatch, img.strategyPlay {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+h2.strategyOverview {
+  font-family: Raleway, sans-serif;
+  text-align: left;
+  font-size: 45px;
+  display: inline;
+  vertical-align: middle;
+}
+
+p.strategyOverview {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  display: inline;
+  text-align: center;
+  vertical-align: text-top;
+  line-height: 40px;
+}
+
+hr.strategyOverview {
+  border: 0; 
+  border-bottom: 1px dashed #ccc; 
+  background: #999;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+a.idLink {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.idLink:link, a.idLink:visited {
+  color: black;
+}
+
+a.idLink:hover {
+  color: #AA4B41;
+}
+
+a.idLink:active {
+  color: #335252;
+}
+
+h1.strategy {
+  font-family: Cinzel, sans-serif;
+  color: #AA4B41;
+  margin-bottom: 0;
+  font-size: 60px;
+  text-shadow: 1px 1px 1px black;
+}
+
+hr.h1divider {
+  border: 0; 
+  height: 0; 
+  border-top: 1px solid rgba(0, 0, 0, 0.1); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 10px;
+}
+
+.overview {
+  padding: 7px;
+}
+
+img.strategyStudy {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.lists {
+  position: relative;
+  float: left;
+  width: 50%;
+  z-index: 999999;
+}
+
+h2 {
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 32px;
+}
+
+h2.books {
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 32px;
+}
+
+hr.listDivider {
+  border: 0 !important;
+  height: 1px; 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h3.books {
+  font-family: Raleway, sans-serif;
+  margin: 5px;
+}
+
+a.strategyLists {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.strategyLists:link {
+  color: black;
+}
+
+a.strategyLists:visited {
+  color: #87a0ab;
+}
+
+a.strategyLists:hover {
+  color: #AA4B41;
+}
+
+a.strategyLists:active {
+  color: #335252; 
+  cursor: pointer;
+}
+
+ul.websites {
+  list-style: none;
+}
+
+ul.books {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+li.strategyLists {
+  font-family: Raleway, sans-serif;
+  margin: 3px;
+}
+
+.liveBlitz {
+  position: relative;
+}
+
+/*Social Media Bar*/
+@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.facebook .fa {
+  color: #3b5998;
+}
+.social-btns .btn.twitter:before {
+  background-color: #3cf;
+}
+.social-btns .btn.twitter .fa {
+  color: #3cf;
+}
+.social-btns .btn.google:before {
+  background-color: #dc4a38;
+}
+.social-btns .btn.google .fa {
+  color: #dc4a38;
+}
+.social-btns .btn.dribbble:before {
+  background-color: #f26798;
+}
+.social-btns .btn.dribbble .fa {
+  color: #f26798;
+}
+.social-btns .btn.skype:before {
+  background-color: #00aff0;
+}
+.social-btns .btn.skype .fa {
+  color: #00aff0;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.social-btns {
+  font-size: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 25px;
+  margin-top: 193px;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #d4dde1;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  opacity: 0.8;
+  margin-top: 7px;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 38px;
+  vertical-align: middle;
+}
+
+iframe.lichess-iframe {
+  position: absolute;
+  opacity: 0.9;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -550px;
+}
+
+input {
+  border-radius: 3px;
+  padding: 4px;
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif;
+}
+
+

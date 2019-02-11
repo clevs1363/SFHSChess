@@ -1,0 +1,2 @@
+-Animate scroll in strategy
+-Hover tips

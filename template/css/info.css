@@ -1,0 +1,908 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-y: scroll;
+}
+
+body {
+  background-image: url('../../images/wallpaper.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+img.logo {
+  position: fixed;
+  height: 160px;
+  width: 135px;
+  left: -32px;
+  top: -45px;
+}
+
+.aboutModalDialog {
+  position: fixed;
+  font-family: 'Raleway', sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.aboutModalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.aboutModalDialog > div {
+  max-width: 550px;
+  position: relative;
+  margin: 10% auto;
+  background: #d4dde1;
+}
+
+header.aboutModal {
+  background: #bcbcbc;
+  width: 100%;
+}
+
+h2.aboutModal {
+  text-align: center;
+  font-family: 'Cinzel', serif;
+  padding: 30px;
+}
+
+header { 
+  margin: 0; 
+  padding: 0;
+  overflow: auto;
+  position: relative;
+  flex-basis: 100%;
+}
+
+h1 {
+  color: white;
+  font-size: 350%;
+  position: relative;
+  font-family: 'Cinzel', serif;
+  text-align: center;
+  margin-bottom: 30px;
+  margin-top: 20px;
+}
+
+.h1header {
+  text-align: center;
+}
+
+a.h1 {
+  display: inline-block;
+}
+
+a.h1:link {
+  color: white;
+  text-decoration: none;
+}
+  
+a.h1:visited {
+  color: white;
+  text-decoration: none;
+}
+
+a.h1:hover{
+  color: #d4dde1;
+  text-decoration: none;
+}
+
+a.h1:active {
+  color: white;
+  text-decoration: none;
+}
+
+p {
+  font-family: 'Raleway', sans-serif;
+  margin: 5px;
+  white-space: normal;
+}
+
+a.index:link {
+  color: #d4dde1;
+  text-decoration: none;
+}
+  
+a.index:visited {
+  color: #d4dde1;
+  text-decoration: none;
+}
+
+a.index:hover{
+  color: #d4dde1;
+  text-decoration: none;
+}
+
+a.index:active {
+  color: #d4dde1;
+}
+
+div.lisulink {
+
+}
+
+a.login {
+  color: #AA4B41;
+}
+
+/*
+Modal Login Box
+*/
+
+.modalDialog {
+  position: fixed;
+  font-family: 'Raleway', sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialog:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialog > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #d4dde1;
+  background: -moz-linear-gradient(#d4dde1, #335252);
+  background: -webkit-linear-gradient(#d4dde1, #335252); 
+  background: -o-linear-gradient(#d4dde1, #335252);
+}
+
+/*
+Modal Signup Box
+*/
+
+.modalDialogSignUp {
+  position: fixed;
+  font-family: 'Raleway', sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalDialogSignUp:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalDialogSignUp > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #d4dde1;
+  background: -moz-linear-gradient(#d4dde1, #335252);
+  background: -webkit-linear-gradient(#d4dde1, #335252); 
+  background: -o-linear-gradient(#d4dde1, #335252);
+}
+
+a.modalLISU:link {
+    color: #2d3033;
+}
+
+a.modalLISU:visited {
+    color: #2d3033;
+}
+
+a.modalLISU:hover {
+    color: #aa4b41;
+}
+
+a.modalLISU:active {
+    color: #d4dde1;
+}
+
+a.close {
+  text-decoration: none;
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+a.close:link {
+  color: #2d3033;
+}
+
+a.close:visited {
+  color: #2d3033;
+}
+
+a.close:hover {
+  color: #2d3033;
+}
+
+a.close:active {
+  color: #2d3033;
+}
+
+h2.modal {
+  text-align: center;
+  margin: 10px;
+}
+
+input {
+  margin: 5px;
+}
+
+p.signup {
+  text-align: center;
+  font-size: x-small;
+}
+
+/*
+Horizontal CSS Menu Starts Here
+*/
+
+nav {
+  position: relative;
+  width: 100%;
+  padding-bottom: 30px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  line-height: 1;
+  display: block;
+  margin: 0 auto;
+}
+
+nav ul:after {
+  content: " ";
+  display: block;
+  font-size: 0;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+}
+
+nav ul li {
+  display: inline-block;
+  padding: 0;
+  margin: 0;
+}
+
+nav.align-right ul li {
+  float: right;
+}
+
+nav.align-center ul {
+  text-align: center;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 15px 25px;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 14px;
+  position: relative;
+  -webkit-transition: color .25s;
+  -moz-transition: color .25s;
+  -ms-transition: color .25s;
+  -o-transition: color .25s;
+  transition: color .25s;
+}
+
+nav ul li a:hover {
+  color: #335252;
+}
+
+nav ul li a:hover:before {
+  width: 100%;
+}
+
+nav ul li a:after {
+  content: "";
+  display: block;
+  position: absolute;
+  right: -3px;
+  top: 19px;
+  height: 6px;
+  width: 6px;
+  background: #ffffff;
+  opacity: .5;
+}
+
+nav ul li a:before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0;
+  background: #333333;
+  -webkit-transition: width .25s;
+  -moz-transition: width .25s;
+  -ms-transition: width .25s;
+  -o-transition: width .25s;
+  transition: width .25s;
+}
+
+nav ul li.last > a:after,
+nav ul li:last-child > a:after {
+  display: none;
+}
+
+nav ul li.active a {
+  color: #333333;
+}
+
+nav ul li.active a:before {
+  width: 100%;
+}
+
+nav.align-right li.last > a:after,
+nav.align-right li:last-child > a:after {
+  display: block;
+}
+
+nav.align-right li:first-child a:after {
+  display: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul li {
+  float: none;
+  display: block;
+  }
+
+  nav ul li a {
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border-bottom: 1px solid #fb998c;
+  }
+
+  nav ul li.last > a,
+  nav ul li:last-child > a {
+  border: 0;
+  }
+
+  nav ul li a:after {
+  display: none;
+  }
+
+  nav ul li a:before {
+  display: none;
+  }
+}
+
+section.mainContentWrapper {
+  text-align: center;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.mainContent {
+  background-color: rgb(212, 221, 225);
+  border-radius: 7px;
+  display: inline-block; 
+  white-space: nowrap;
+  background-image: url('../../images/infoMainBackground.png');
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: local;
+
+}
+
+h1.aboutus {
+  font-family: Cinzel, serif;
+  font-size: 230%;
+  color: #2d3033;
+  text-align: center;
+  margin: 0;
+  padding-top: 10px;
+  padding-left: 5px;
+  padding-right: 5px;
+  background: #AA4B41;
+  background-position: center;
+  display: inline;
+  opacity: 1;
+  text-shadow: 1px 1px black;
+}
+
+img.icons {
+  opacity: 1;
+  position: relative;
+  float: right;
+  margin: 5px;
+}
+
+.h1ico {
+  border-bottom: 5px #AA4B41 solid;
+  width: 100%;
+  opacity: 1;
+  display: block; 
+  margin: 0 auto;
+  box-shadow: 0 2px;
+}
+
+h2.main {
+  font-family: 'Raleway', sans-serif;
+  font-size: 140%;
+  margin-top: 10px;
+}
+
+#accordion {
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 70%;
+}
+
+button.accordion {
+  background: transparent;
+  cursor: pointer;
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-left: 0;
+  text-align: center;
+  width: 100%;
+  border: none;
+  outline: none;
+  font-size: 20px;
+  transition: 0.4s;
+  font-family: 'Raleway', sans-serif;
+}
+
+button.accordion:hover {
+  background-color: #335252; 
+}
+
+button.active, button.active:hover {
+  background-color: #AA4B41;
+}
+
+div.panel {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+button.accordion:before {
+  content: '⮞'; /* Unicode character for "plus" sign (+) */
+  font-size: 20px;
+  margin-right: 5px;
+}
+
+button.accordion.active:before {
+  content: "⮟"; /* Unicode character for "minus" sign (-) */
+  font-size: 20px;
+}
+
+li.list {
+  font-family: 'Raleway', sans-serif;
+  margin: 5px;
+  white-space: normal;
+}
+
+iframe.video {
+  display: block;
+  margin: 0 auto;
+}
+
+hr.infoToLists {
+  border: 0; 
+  height: 1px; 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+/*Members CSS*/
+.memberslist {
+  position: relative;
+  float: left;
+  margin-top: 10px;
+  width: 60%;
+}
+
+h2.membersmain {
+  font-family: 'Raleway', sans-serif;
+  font-size: 180%;
+  text-align: center;
+  color: #2d3033;
+  margin-bottom: 10px;
+}
+
+div.left {
+  position: relative;
+  float: left;
+  margin-bottom: 20px;
+}
+
+div.right {
+  position: relative;
+  float: right;
+  margin-bottom: 20px;
+}
+
+p.left {
+  margin: 4px;
+  margin-left: 20px;
+  border: 1px solid #2d3033;
+  border-radius: 7px;
+  padding: 7px;
+  color: #2d3033;
+  transition-duration: 0.4s;
+  transition-property: background-color;
+  transition-timing-function: ease-out;
+  position: relative;
+  box-shadow: 1px 1px 1px black;
+  opacity: 1;
+  font-family: 'Raleway', sans-serif;
+  font-size: 100%;
+  color: #2d3033;
+  clear: right;
+  text-align: left;
+}
+
+p.left:hover {
+  transition-duration: 0.4s;
+  transition-property: background-color;
+  transition-timing-function: ease-out;
+  background-color: #335252;
+  cursor: pointer;
+  opacity: 1;
+}
+
+p.right {
+  margin: 4px;
+  margin-right: 20px;
+  border: 1px solid #2d3033;
+  border-radius: 7px;
+  padding: 7px;
+  color: #2d3033;
+  transition-duration: 0.4s;
+  transition-property: background-color;
+  transition-timing-function: ease-out;
+  position: relative;
+  box-shadow: 1px 1px 1px black;
+  font-family: 'Raleway', sans-serif;
+  font-size: 100%;
+  color: #2d3033;
+  clear: left;
+  text-align: left;
+}
+
+p.right:hover {
+  transition-duration: 0.4s;
+  transition-property: background-color;
+  transition-timing-function: ease-out;
+  background-color: #335252;
+  cursor: pointer;
+}
+
+h2.rankingsHeader {
+  font-family: 'Raleway', sans-serif;
+  font-size: 180%;
+  text-align: center;
+}
+
+.rankings {
+  width: 40%;
+  position: relative;
+  float: right;
+  margin-top: 10px;
+}
+
+li.rankname {
+  font-family: 'Raleway', sans-serif;
+  font-size: 150%;
+  margin: 10px;
+}
+
+ol.rankings {
+  width: 100%;
+  text-align: center;
+  list-style-position: inside;
+}
+
+img.profileicon {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+  
+a.profile {
+  text-decoration: none;
+}
+
+a.profile:link {
+  color: #2d3033;
+}
+
+a.profile:visited {
+  color: #2d3033;
+}
+
+a.profile:hover {
+  color: #2d3033;
+}
+
+a.profile:active {
+  color: #2d3033;
+  cursor: pointer;
+}
+
+h2.profile {
+  font-family: 'Raleway', sans-serif;
+  font-size: 150%;
+  text-align: center;
+  color: #2d3033;
+}
+
+ul.profile {
+  list-style: none;
+}
+
+li {
+  font: 'Raleway', sans-serif;
+}
+
+/*
+Profile Modal
+*/
+
+.profileModal {
+  position: fixed;
+  font-family: 'Raleway', sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.profileModal:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.profileModal > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #d4dde1;
+  background: -moz-linear-gradient(#d4dde1, #335252);
+  background: -webkit-linear-gradient(#d4dde1, #335252); 
+  background: -o-linear-gradient(#d4dde1, #335252);
+}
+
+p.profile {
+  font-family: 'Raleway', sans-serif;
+  font-size: large;
+  color: #2d3033;
+  margin: 5px;
+}
+
+/*
+Challenge Modal
+*/
+
+.modalChallenge {
+  position: fixed;
+  font-family: 'Raleway', sans-serif;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0,0,0,0.8);
+  z-index: 99999;
+  opacity:0;
+  -webkit-transition: opacity 400ms ease-in;
+  -moz-transition: opacity 400ms ease-in;
+  transition: opacity 400ms ease-in;
+  pointer-events: none;
+}
+
+.modalChallenge:target {
+  opacity:1;
+  pointer-events: auto;
+}
+
+.modalChallenge > div {
+  width: 400px;
+  position: relative;
+  margin: 10% auto;
+  padding: 5px 20px 13px 20px;
+  border-radius: 10px;
+  background: #d4dde1;
+  background: -moz-linear-gradient(#d4dde1, #335252);
+  background: -webkit-linear-gradient(#d4dde1, #335252); 
+  background: -o-linear-gradient(#d4dde1, #335252);
+}
+
+a.chlng:link {
+  color: #2d3033;
+}
+
+a.chlng:visited {
+  color: #2d3033;
+}
+
+a.chlng:hover {
+  color: #2d3033;
+}
+
+a.chlng:active {
+  color: #2d3033;
+  cursor: pointer;
+}
+
+input {
+  border-radius: 3px;
+  padding: 4px;
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif;
+}
+
+/*Social Media Bar*/
+@import '//codepen.io/chrisdothtml/pen/ojLzJK.css';
+.social-btns .btn,
+.social-btns .btn:before,
+.social-btns .btn .fa {
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+  -webkit-transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+          transition-timing-function: cubic-bezier(0.31, -0.105, 0.43, 1.59);
+}
+.social-btns .btn:before {
+  top: 90%;
+  left: -110%;
+}
+.social-btns .btn .fa {
+  -webkit-transform: scale(0.8);
+          transform: scale(0.8);
+}
+.social-btns .btn.facebook:before {
+  background-color: #3b5998;
+}
+.social-btns .btn.facebook .fa {
+  color: #3b5998;
+}
+.social-btns .btn.twitter:before {
+  background-color: #3cf;
+}
+.social-btns .btn.twitter .fa {
+  color: #3cf;
+}
+.social-btns .btn.google:before {
+  background-color: #dc4a38;
+}
+.social-btns .btn.google .fa {
+  color: #dc4a38;
+}
+.social-btns .btn.dribbble:before {
+  background-color: #f26798;
+}
+.social-btns .btn.dribbble .fa {
+  color: #f26798;
+}
+.social-btns .btn.skype:before {
+  background-color: #00aff0;
+}
+.social-btns .btn.skype .fa {
+  color: #00aff0;
+}
+.social-btns .btn:focus:before,
+.social-btns .btn:hover:before {
+  top: -10%;
+  left: -10%;
+}
+.social-btns .btn:focus .fa,
+.social-btns .btn:hover .fa {
+  color: #fff;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+.social-btns {
+  font-size: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin-right: 25px;
+  margin-top: 193px;
+}
+.social-btns .btn {
+  display: inline-block;
+  background-color: #d4dde1;
+  width: 90px;
+  height: 90px;
+  line-height: 90px;
+  margin: 0 10px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+  border-radius: 28%;
+  box-shadow: 0 5px 15px -5px rgba(0,0,0,0.1);
+  opacity: 0.8;
+  margin-top: 7px;
+}
+.social-btns .btn:before {
+  content: '';
+  width: 120%;
+  height: 120%;
+  position: absolute;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+.social-btns .btn .fa {
+  font-size: 38px;
+  vertical-align: middle;
+}
+
+
+input {
+  border-radius: 3px;
+  padding: 4px;
+  margin-top: 5px;
+  font-family: 'Raleway', sans-serif;
+}

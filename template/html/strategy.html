@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>SFHS Chess Club</title>
+	<link rel='stylesheet' href='../css/strategy.css'>
+	<meta charset='utf-8'>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'> 
+	<link rel='shortcut icon' href='../../images/favicon.png' type='image/jpg'> 
+	<link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css'>
+	<link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+	<!--[if IE]>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+	<![endif]-->
+	<script>
+		(function(){if(!/*@cc_on!@*/0)return;var e = "abbr,article,aside,audio,bb,canvas,datagrid,datalist,details,dialog,eventsource,figure,footer,header,hgroup,mark,menu,meter,nav,output,progress,section,time,video".split(','),i=e.length;while(i--){document.createElement(e[i])}})()
+	</script>
+</head>
+
+<body>
+
+  <img src='../../images/logo.png' class='logo' />
+	<header>	
+	  <h1><a href='index.html' class='h1'>SFHS Chess Club</a></h1>
+	 
+    <!--Horizontal NavMenu-->	
+	  <nav>
+      <ul>
+        <li><a href='info.html'>Info</a></li>
+        <li><a href='challenges.html'>Challenges</a></li>
+				<li><a href='strategy.html'>Strategy</a></li>
+				<li><a href='http://www.nychess.org/league/18-19chB1.html' target='_blank'>Schedule</a></li>
+				<li><a href='#openModal' class='login'>Log In</a></li>
+      </ul>
+    </nav>
+	</header>
+	
+	<div class='lisulink'>
+	  
+    <!--Sign in Modal Box-->
+	  <div id='openModal' class='modalDialog'>
+	    <div>
+		  	<a href='#close' title='Close' class='close'>X</a>
+		   	<h2 class='modal'>Log In</h2>
+		   		<p class='modal'>Log in to review your challenges, ranking, and other great features!</p>
+		   		<form>
+		     		<input type='text' placeholder='Username' class='username' autofocus required><br>
+			 			<input type='password' placeholder='Password'  class='username' required><br>
+			 			<input type='submit' class='submit'>
+		  		</form>
+		  		<p class='signup'>Not a member yet? Sign up <a href='#openModalSignUp' class='modalLISU'>here.</a>
+      </div>		   
+    </div>
+	   
+	  <!--Sign Up Modal Box-->
+	  <div id='openModalSignUp' class='modalDialogSignUp'>
+	    <div>
+		  	<a href='#close' title='Close' class='close'>X</a>
+		   	<h2 class='modal'>Sign Up</h2>
+		   		<p class='modal'>Sign up to become an official member of SFHS Chess Club!</p>
+		   		<form>
+		     		<input type='email' placeholder='Email' class='email' required><br>
+		     		<input type='text' placeholder='Username' class='username' required><br>
+			 			<input type='password' placeholder='Password'  class='username' required><br>
+			 			<input type='submit' class='submit'>
+		   		</form>
+		  		<p class='signup'>Already a member? Sign in <a href='#openModal' class='modalLISU'>here.</a>
+		 	</div>
+	  </div>
+	   
+	</div>
+
+	<div class='mainWrapper'>
+		<section class='main'>
+		<h1 class='strategy'>Strategy Guide</h1>
+			<hr class='h1divider'>
+			<div class='overview'>
+				<h2 class='strategyOverview'>
+					<img src='../../images/strategyStudy.png' class='strategyStudy' width='50px' height='50px'>Study</h2>
+					<p class='strategyOverview'>&nbsp;
+						Chess is an academic game. You can only get so far on raw skill; you must begin to study at some point
+						if you want to truly advance your game. <a href='#websitesListLink' class='idLink'>Listed below</a> are a 
+						variety of resources to get you started!
+					</p>
+					<hr class='strategyOverview'>
+				<h2 class='strategyOverview'><img src='../../images/strategyRead.png' class='strategyRead' width='50px' height='50px'>Read</h2>
+					<p class='strategyOverview'>&nbsp;
+						A large part of studying is reading what the experts have to say. Books are a great way to compact
+						the teachings of past chess masters into one written resource. <a href='#booksListLink' class='idLink'>
+						The list below</a> is divided into the skill levels of beginner, intermediate, and advanced, each focusing 
+						on a specific aspect of chess, such as openings, endgames, tactics, and positional strategy.
+					</p>
+					<hr class='strategyOverview'>
+				<h2 class='strategyOverview'><img src='../../images/strategyWatch.png' class='strategyWatch' width='50px' height='50px'>Watch</h2>
+					<p class='strategyOverview'>&nbsp;
+						Watching chess can be broken up into two parts: watching advanced players, and reviewing your own games.
+						Just as professional sports players do, watching masterful examples of your craft as well as reviewing
+						your own performance can greatly advcance your skill level. <a href='#liveBlitzLink' class='idLink'>
+						Displayed below</a> is a live blitz game being played by IM's or GM's.
+					</p>
+					<hr class='strategyOverview'>
+				<h2 class='strategyOverview'><img src='../../images/strategyPlay.png' class='strategyPlay' width='50px' height='50px'>Play!</h2>
+					<p class='strategyOverview'>&nbsp;
+						And of course, one can only truly become better by doing! There are a variety of ways to play chess
+						online, such as <a href='http://www.chess.com' class='strategyLists'>Chess.com</a>, 
+						<a href='https://lichess.org/' class='strategyLists'>Lichess</a>, 
+						<a href='https://www.chessclub.com/' class='strategyLists'>The Internet Chess Club</a>, and
+						<a href='https://www.chessstrategyonline.com/play-chess-online' class='strategyLists'>more</a>! 
+						<a href='#lichessLink' class='idLink'>Hosted below</a> is an embedded version of Lichess for you to play
+						now!
+					</p>
+					<br>
+					<br>
+					<hr class='h1divider'>
+			</div>
+			<br>
+			<div class='lists'>
+				<h2 id='websitesListLink'>Recommended Websites:</h2>
+					<ul class='websites'>
+						<li class='strategyLists'><a href=
+							'http://www.chess.com' 
+							class='strategyLists'>Chess.com</a></li>
+						<li class='strategyLists'><a href=
+							'https://www.youtube.com/channel/UC6HDXr-sNPnWLF_Q-y3KduA' 
+							class='strategyLists'>Chess Talk</a></li>
+						<li class='strategyLists'><a href=
+							'https://www.thechesswebsite.com' 
+							class='strategyLists'>The Chess Website</a></li>
+						<li class='strategyLists'><a href=
+							'https://www.youtube.com/user/thechesswebsite' 
+							class='strategyLists'>The Chess Website (Youtube Channel)</a></li>
+						<li class='strategyLists'><a href=
+							'https://www.chessfort.com' 
+							class='strategyLists'>Chess Fort</a></li>
+						<li class='strategyLists'><a href=
+							'https://www.chessable.com' 
+							class='strategyLists'>Chessable</a></li>
+						<li class='strategyLists'><a href=
+							'https://www.reddit.com/r/chess/comments/38rfkr/list_of_free_online_chess_resources/' 
+							class='strategyLists'>List of Chess Resources</a></li>	
+					</ul>
+				<hr class='listDivider'>
+				<h2 class='books' id='booksListLink'>Recommended Books:</h2>
+					<h3 class='books'>Beginner</h3>
+						<ul class='books'>
+							<li class='strategyLists'><a href=
+								'https://www.amazon.com/Pandolfinis-Ultimate-Guide-Chess-Strategies/dp/0743226178/ref=sr_1_1?s=books&ie=UTF8&qid=1453683613&sr=1-1&keywords=pandolfini%27s+ultimate+guide+to+chess' 
+								class='strategyLists'>Basics: Pandolfini's Ultimate Guide to Chess</a></li>
+							<li class='strategyLists'><a href=
+								'https://www.amazon.com/gp/product/0553263153?keywords=bobby%20fischer%20teaches%20chess&qid=1445178608&ref_=sr_1_1&s=books&sr=1-1' 
+								class='strategyLists'>Tactics: Bobby Fischer Teaches Chess</a></li>
+							<li class='strategyLists'><a href=
+								'https://www.amazon.com/WINNING-CHESS-Irving-Chernev/dp/1501117580/ref=sr_1_1?s=hi&ie=UTF8&qid=1505064117&sr=8-1&keywords=winning+chess+irving+chernev' 
+								class='strategyLists'>Tactics: Winning Chess</a></li>
+							<li class='strategyLists'><a href=
+								'https://www.amazon.com/Discovering-Chess-Openings-Building-Principles/dp/1857444191/ref=sr_1_1?s=books&ie=UTF8&qid=1445178729&sr=1-1&keywords=discovering+chess+openings' 
+								class='strategyLists'>Opening Concepts: Discover Chess Openings</a></li>
+							<li class='strategyLists'><a href=
+								'https://www.amazon.com/Pandolfinis-Endgame-Course-Concepts-Explained/dp/0671656880/ref=sr_1_1?s=books&ie=UTF8&qid=1445178814&sr=1-1&keywords=pandolfinis+endgame+course' 
+								class='strategyLists'>Endgame Basics: Pandolfini's Endgame Course</a></li>
+							<li class='strategyLists'><a href=
+								'https://www.amazon.com/Endgame-Workshop-Principles-Practical-Pandolfini/dp/1888690534/ref=sr_1_1?s=books&ie=UTF8&qid=1445178874&sr=1-1&keywords=endgame+workshop' 
+								class='strategyLists'>Endgame Basics: Endgame Workshop</a></li>
+							<li class='strategyLists'><a href='https://www.reddit.com/r/chess/comments/38rfkr/list_of_free_online_chess_resources/' class='strategyLists'>List of Chess Resources</a></li>	
+						</ul>
+					<h3 class='books'>Intermediate</h3>
+						<ul class='books'>
+							<li class='strategyLists'><a href=
+								'https://www.amazon.com/Logical-Chess-Explained-Algebraic-Edition/dp/0713484640?SubscriptionId=AKIAIH6BKLR7M6KSMDGQ&tag=aboutcom02thesprucecrafts-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=0713484640' 
+								class='strategyLists'>Basics: Logical Chess</a></li>
+							<li class='strategyLists'><a href=
+								'https://www.amazon.com/Play-Winning-Chess-Everyman/dp/1857443314?SubscriptionId=AKIAIH6BKLR7M6KSMDGQ&tag=aboutcom02thesprucecrafts-20&linkCode=xm2&camp=2025&creative=165953&creativeASIN=1857443314' 
+								class='strategyLists'>Positionl Strategy: Playing Winning Chess</a></li>
+							<li class='strategyLists'><a href=
+								'https://www.amazon.com/Amateurs-Mind-Turning-Misconceptions-Mastery/dp/1890085022/ref=sr_1_1?s=books&ie=UTF8&qid=1475174934&sr=1-1&keywords=the%2Bamateur%27s%2Bmind&tag=aboutcom02thesprucecrafts-20' 
+								class='strategyLists'>The Amateur's Mind</a></li>
+							<li class='strategyLists'><a href=
+								'https://www.amazon.com/Looking-Trouble-Recognizing-Meeting-Threats/dp/1936490854/ref=sr_1_1?ie=UTF8&qid=1475175013&sr=8-1&keywords=looking%2Bfor%2Btrouble%2Bdan%2Bheisman&tag=aboutcom02thesprucecrafts-20' 
+								class='strategyLists'>Tactics: Looking for Trouble</a></li>
+							<li class='strategyLists'><a href=
+								'https://www.amazon.com/Silmans-Complete-Endgame-Course-Beginner/dp/1890085103/ref=nav_custrec_signin?s=books&ie=UTF8&qid=1475175104&sr=1-1&keywords=silman%27s%2Bcomplete%2Bendgame&tag=aboutcom02thesprucecrafts-20&ascsubtag=611500%7Cgoogle.com%7C%7C%7C%7C1%7C&' 
+								class='strategyLists'>Endgame: Silman's Complete Endgame Course</a></li>
+						</ul>
+			</div>
+			<div class='liveBlitz' class='liveBlitzLink'>
+				<h2>Live Blitz:</h2>
+				<iframe src="http://liveblitz.chessbase.com" width="360" height ="360" class='liveBlitz'></iframe>
+			</div>	 
+	</section>
+	</div>
+	
+	<div class='ligame' id='lichessLink'>
+	  <script src="https://en.lichess.org/embed?w=1100&h=560"></script>
+	</div>
+	<br><br><br><br><br><br>
+	
+	<!--Social Media Bar-->
+	<div class='social-btns'>
+	  <ul>
+	    <li><a class='btn facebook' href='http://www.facebook.com' target='blank'><i class='fa fa-facebook'></i></a></li>
+	    <li><a class='btn twitter' href='http://www.twitter.com' target='blank'><i class='fa fa-twitter'></i></a></li>
+	    <li><a class='btn google' href='http://www.google.com' target='blank'><i class='fa fa-google'></i></a></li>
+	    <li><a class='btn dribbble' href='http://www.dribbble.com' target='blank'><i class='fa fa-dribbble'></i></a></li>
+	    <li><a class='btn skype' href='http://www.skype.com' target='blank'><i class='fa fa-skype'></i></a></li>
+    </ul>
+	</div>
+	
+</body>
+
+</html>
