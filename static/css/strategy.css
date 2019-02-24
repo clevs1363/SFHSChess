@@ -12,12 +12,11 @@ html {
 }
 
 body {
-  background-image: url('../../images/wallpaper.jpg');
+  background-image: url('../../static/images/wallpaper.jpg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  -ms-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
 }
@@ -34,7 +33,6 @@ header {
   margin: 0; 
   padding: 0;
   overflow: auto;
-  position: relative;
 }
 
 h1 {
@@ -46,6 +44,7 @@ h1 {
   margin-bottom: 30px;
   margin-top: 20px;
 }
+
 
 .h1header {
   text-align: center;
@@ -94,43 +93,12 @@ a.index:active {
   color: #d4dde1;
 }
 
-a.modalLISU:link {
-    color: #2d3033;
+div.lisulink {
+
 }
 
-a.modalLISU:visited {
-    color: #2d3033;
-}
-
-a.modalLISU:hover {
-    color: #aa4b41;
-}
-
-a.modalLISU:active {
-    color: #d4dde1;
-}
-
-a.close {
-  text-decoration: none;
-  float: right;
-  margin-top: 5px;
-  margin-right: 10px;
-}
-
-a.close:link {
-    color: #2d3033;
-}
-
-a.close:visited {
-    color: #2d3033;
-}
-
-a.close:hover {
-    color: #2d3033;
-}
-
-a.close:active {
-    color: #2d3033;
+a.login {
+  color: #AA4B41;
 }
 
 /*
@@ -207,6 +175,45 @@ Modal Signup Box
   background: -o-linear-gradient(#d4dde1, #335252);
 }
 
+a.modalLISU:link {
+    color: #2d3033;
+}
+
+a.modalLISU:visited {
+    color: #2d3033;
+}
+
+a.modalLISU:hover {
+    color: #aa4b41;
+}
+
+a.modalLISU:active {
+    color: #d4dde1;
+}
+
+a.close {
+  text-decoration: none;
+  float: right;
+  margin-top: 5px;
+  margin-right: 10px;
+}
+
+a.close:link {
+    color: #2d3033;
+}
+
+a.close:visited {
+    color: #2d3033;
+}
+
+a.close:hover {
+    color: #2d3033;
+}
+
+a.close:active {
+    color: #2d3033;
+}
+
 h2.modal {
   text-align: center;
   margin: 10px;
@@ -222,7 +229,7 @@ p.signup {
 }
 
 /*
-Menu Starts Here
+Horizontal CSS Menu Starts Here
 */
 
 nav {
@@ -253,7 +260,6 @@ nav ul li {
   display: inline-block;
   padding: 0;
   margin: 0;
-  margin: 0 auto;
 }
 
 nav.align-right ul li {
@@ -367,98 +373,166 @@ nav.align-right li:first-child a:after {
   }
 }
 
-a.login {
-  color: #aa4b41;
-}
-
-/* 
-End Menu
-*/
-
-section.maincircle {
-  width: 570px;
-  height: 570px;
-  border-radius: 570px;
-  background: rgba(212,221,225, 0.8);
-  display: block;
-  margin: 0 auto;
-  position: absolute;
-  left: 50%;
-  margin-left: -285px;
-}
-
-p.link {
-  font-weight: bold;
-  background: #335252;
-  border-radius: 3px;
-  padding: 10px;
+.mainWrapper {
   text-align: center;
-  width: 100px;
+  width: 60%;
+  margin: 0 auto;   
+}
+
+section.main {
   margin: 0 auto;
-  font-family: 'Raleway', sans-serif;
-  opacity: 1;
-  box-shadow: 1px 1px 1px black;
+  width: 100%;
+  background-color: #d4dde1;
+  display: inline-block;
+  margin-bottom: 25px;
+  border-radius: 7px;
 }
 
-a.main {
-  opacity: 1;
-}
-	
-a.main:link {
-  color: #d4dde1;
-  text-decoration: none;
-  opacity: 1;
+img.strategyStudy, img.strategyRead, img.strategyWatch, img.strategyPlay {
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
-a.main:visited {
-  color: #2d3033;
-  text-decoration: none;
-  opacity: 1;
+h2.strategyOverview {
+  font-family: Raleway, sans-serif;
+  text-align: left;
+  font-size: 45px;
+  display: inline;
+  vertical-align: middle;
 }
 
-a.main:hover {
-  transition: color 0.3s;
-  color: #aa4b41;
-  text-decoration: none;
-  opacity: 1;
-}
-
-a.main:active {
-  -webkit-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
-  -moz-box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
-  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.6);
-  color: #2d3033;
-  text-decoration: none;
-  opacity: 1;
-}
-  
-div.maintext {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  margin: 0 auto;
-  display: block;
-}
-
-h2.main {
-  font-family: 'Raleway', sans-serif;
-  font-size: 200%;
+p.strategyOverview {
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  display: inline;
   text-align: center;
-  margin: 10px;
-  color: #2d3033;
+  vertical-align: text-top;
+  line-height: 40px;
 }
 
-hr.div {
-  width: 10%;
-  border: 3px solid #2d3033;
-  margin: 0 auto;
+hr.strategyOverview {
+  border: 0; 
+  border-bottom: 1px dashed #ccc; 
+  background: #999;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
 
-p.main {
-  font-family: 'Raleway', sans-serif;
-  margin: 10px;
-  color: #2d3033;
+a.idLink {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.idLink:link, a.idLink:visited {
+  color: black;
+}
+
+a.idLink:hover {
+  color: #AA4B41;
+}
+
+a.idLink:active {
+  color: #335252;
+}
+
+h1.strategy {
+  font-family: Cinzel, sans-serif;
+  color: #AA4B41;
+  margin-bottom: 0;
+  font-size: 60px;
+  text-shadow: 1px 1px 1px black;
+}
+
+hr.h1divider {
+  border: 0; 
+  height: 0; 
+  border-top: 1px solid rgba(0, 0, 0, 0.1); 
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  margin-bottom: 10px;
+}
+
+.overview {
+  padding: 7px;
+}
+
+img.strategyStudy {
+  vertical-align: middle;
+  margin-right: 10px;
+}
+
+.lists {
+  position: relative;
+  float: left;
+  width: 50%;
+  z-index: 999999;
+}
+
+h2 {
+  font-family: Raleway, sans-serif;
   text-align: center;
+  margin-bottom: 5px;
+  font-size: 32px;
+}
+
+h2.books {
+  font-family: Raleway, sans-serif;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 32px;
+}
+
+hr.listDivider {
+  border: 0 !important;
+  height: 1px; 
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+  margin: 0;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+h3.books {
+  font-family: Raleway, sans-serif;
+  margin: 5px;
+}
+
+a.strategyLists {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+a.strategyLists:link {
+  color: black;
+}
+
+a.strategyLists:visited {
+  color: #87a0ab;
+}
+
+a.strategyLists:hover {
+  color: #AA4B41;
+}
+
+a.strategyLists:active {
+  color: #335252; 
+  cursor: pointer;
+}
+
+ul.websites {
+  list-style: none;
+}
+
+ul.books {
+  list-style: none;
+  margin-bottom: 10px;
+}
+
+li.strategyLists {
+  font-family: Raleway, sans-serif;
+  margin: 3px;
+}
+
+.liveBlitz {
+  position: relative;
 }
 
 /*Social Media Bar*/
@@ -556,6 +630,14 @@ p.main {
   vertical-align: middle;
 }
 
+iframe.lichess-iframe {
+  position: absolute;
+  opacity: 0.9;
+  margin: 0 auto;
+  left: 50%;
+  margin-left: -550px;
+}
+
 input {
   border-radius: 3px;
   padding: 4px;
@@ -563,4 +645,4 @@ input {
   font-family: 'Raleway', sans-serif;
 }
 
-  
+
