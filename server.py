@@ -35,6 +35,9 @@ def runStrategy():
 def runStrategyCSS():
     return url_for('static', filename='/css/strategy.css')
 
+@SFHSChess.route("/user/", method=["POST"])
+
+
 if __name__ == '__main__':
     SFHSChess.debug = True
     SFHSChess.run(host = '0.0.0.0', port = 5000)
